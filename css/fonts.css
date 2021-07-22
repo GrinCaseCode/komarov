@@ -1,0 +1,44 @@
+@font-face {
+	font-family: 'PT Sans';
+	src: url('../fonts/PTSans-Regular.eot');
+	src: url('../fonts/PTSans-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/PTSans-Regular.woff') format('woff'),
+	url('../fonts/PTSans-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PT Sans';
+	src: url('../fonts/PTSans-Bold.eot');
+	src: url('../fonts/PTSans-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/PTSans-Bold.woff') format('woff'),
+	url('../fonts/PTSans-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PT Sans Narrow';
+	src: url('../fonts/PTSans-Narrow.eot');
+	src: url('../fonts/PTSans-Narrow.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/PTSans-Narrow.woff') format('woff'),
+	url('../fonts/PTSans-Narrow.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'LunchBox';
+	src: local('LunchBox Bold'), local('LunchBox-Bold'),
+	url('../fonts/LunchBox-Bold.woff2') format('woff2'),
+	url('../fonts/LunchBox-Bold.woff') format('woff'),
+	url('../fonts/LunchBox-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Lifehack';
+	src: local('Lifehack Bold'), local('Lifehack-Bold'),
+	url('../fonts/LifehackSans-Bold.woff2') format('woff2'),
+	url('../fonts/LifehackSans-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
