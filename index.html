@@ -1372,7 +1372,15 @@
 				zoom: 15
 			}, {
 				searchControlProvider: 'yandex#search'
-			}),
+			});
+
+		
+
+  {
+        if ($(window).width() < 768) {
+           myMap.setZoom(13);
+            }
+  }
 			myPlacemark1 = new ymaps.Placemark([59.555238, 150.823362], {
 				balloonContent: '<p class="text-map">ул. Комсомольская, 12</p>'
 			}, {
