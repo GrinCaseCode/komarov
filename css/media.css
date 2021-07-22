@@ -1279,6 +1279,12 @@ max-width: 180px;
 .instagram .title-section {
     font-size: 26px;
 }
+.slick-prev {
+    left: 10px;
+}
+.slick-next {
+    right: 10px;
+}
 }
 @media only screen and (max-width : 359px) {
     .title-billbord > *:first-child {
@@ -1372,12 +1378,7 @@ max-width: 180px;
     min-width: 145px;
     height: 37px;
 }
-.slick-prev {
-    left: 10px;
-}
-.slick-next {
-    right: 10px;
-}
+
 }
 
 /* Custom, iPhone Retina */
