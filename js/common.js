@@ -47,6 +47,17 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		heightDetect();
 	});
 
+	{
+    if ($(window).width() < 768) { 
+      $(".footer__title").click(function() {
+        $(this).toggleClass("active");
+        $(this).siblings(".footer__content").slideToggle(200);
+      });
+
+
+    }
+  }
+
 	jQuery('.quantity').each(function() {
 		var spinner = jQuery(this),
 		input = spinner.find('input[type="number"]'),
