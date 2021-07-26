@@ -1719,7 +1719,13 @@
         min-width: 145px;
         height: 37px;
     }
-
+.row_categories {
+    margin: 0 -5px;
+}
+.row_categories > div {
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
 }
 
 /* Custom, iPhone Retina */
