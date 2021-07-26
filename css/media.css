@@ -211,6 +211,25 @@
     font-size: 19px;
     left: 30px;
 }
+.content_page .footer__wrap {
+    padding-left: 35px;
+    }
+    .header_page .logo-wrap, .sidebar_page {
+        width: 324px;
+    }
+    .menu-sidebar__name {
+    font-size: 18px;
+        padding: 15px 9px;
+}
+.item-category {
+    font-size: 21px;
+    }
+    .item-category {
+        height: 330px;
+    }
+    .item-category__image {
+    height: 210px;
+}
 }
 @media only screen and (max-width : 1540px) {
     .unit__title {
@@ -405,12 +424,30 @@
 .menu-dropdown {
     padding: 25px;
 }
+.item-category__image {
+    height: 210px;
+    margin-bottom: 15px;
+    }
+    .item-category {
+        height: 325px;
+    }
 }
 @media only screen and (max-width : 1300px) {
 .slider-catalog {
     max-width: calc(100vw - 170px);
 }
-
+.item-category {
+    font-size: 19px;
+}
+.header__right .btn-sidebar {
+    margin-right: 14px;
+}
+.header__left .btn-main {
+    margin-left: 20px;
+}
+.menu-sidebar__content {
+    font-size: 16px;
+    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -427,10 +464,29 @@
     .slider-catalog {
         max-width: calc(100vw + 40px);
     }
+    .header_page .logo-wrap, .sidebar_page {
+        width: 280px;
+    }
+    .header__left .btn-main {
+        display: none;
+    }
+    .item-category {
+    font-size: 15px;
+        height: 257px;
+}
+.item-category__image {
+    height: 170px;
+}
+.footer .instagram__link {
+    font-size: 17px;
+}
+.footer .contacts-wrap {
+   flex-wrap: wrap;
+}
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 1200px) {
 .sidebar {
     display: none;
 }
@@ -501,6 +557,8 @@
 }
 .wrap-advantages {
     max-width: 739px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .item-advantage img {
     max-width: 304px;
