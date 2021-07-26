@@ -38,6 +38,23 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			$(".sandwich").removeClass("active");
 		});
 
+
+	$(".menu-sidebar__name").click(function() {
+		$(this).toggleClass("active");
+		$(this).siblings(".menu-sidebar__content").slideToggle(200);
+		$(this).parent().siblings().find(".menu-sidebar__content").slideUp(200);
+		$(this).parent().siblings().find(".menu-sidebar__name").removeClass("active");
+	});
+
+	$(".item-vacancy__head").click(function() {
+		$(this).parent().toggleClass("active");
+		$(this).siblings(".item-vacancy__content").slideToggle(200);
+		$(this).parent().siblings().find(".item-vacancy__content").slideUp(200);
+		$(this).parent().siblings().removeClass("active");
+	});
+$(".item-vacancy__head .btn-main").click(function(e) {
+	e.preventDefault();
+		});
 	/*высота блока по экрану*/
 	function heightDetect() {
 		$('.menu-dropdown').css("height", $(window).height() -$(".header").height() + 60);
@@ -100,7 +117,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		slidesToScroll: 1,
 		responsive: [
 		{
-			breakpoint: 992,
+			breakpoint: 1300,
 			settings: {
 				slidesToShow: 3,
 			}
@@ -118,6 +135,45 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			}
 		}
 		]
+	});
+
+
+	$('.slider-nav').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		verticalSwiping: true,
+		vertical: true,
+		asNavFor: '.slider-for',
+		slidesToShow: 3,
+		 focusOnSelect: true,
+		slidesToScroll: 1,
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				vertical: false,
+				verticalSwiping: false,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 2,
+				vertical: false,
+				verticalSwiping: false,
+			}
+		}
+		]
+	});
+
+	$('.slider-for').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		asNavFor: '.slider-nav',
+		slidesToShow: 1,
+		slidesToScroll: 1,
 	});
 
 	$('.tabs li a').click(function(event) {
@@ -146,6 +202,15 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		$(".tab-pane-contacts").hide();
 		var selectTab3 = $(this).attr("href");
 		$(selectTab3).fadeIn(200);
+	});
+
+	$('.tabs-card li a').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(".tab-container-card").find(".tab-pane-card").hide();
+		var selectTab4 = $(this).attr("href");
+		$(selectTab4).fadeIn(200);
 	});
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
