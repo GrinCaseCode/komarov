@@ -1576,6 +1576,7 @@
     }
     .item-vacancy .btn-main {
         min-width: 113px;
+        height: 32px;
     }
     .item-vacancy__title {
         font-size: 20px;
@@ -1621,6 +1622,9 @@
     .tabs-card a {
         min-width: 160px;
         font-size: 17px;
+    }
+    .row_categories > div {
+        margin-bottom: 25px;
     }
 }
 @media only screen and (max-width : 359px) {
