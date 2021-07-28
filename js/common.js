@@ -176,6 +176,32 @@ $(".item-vacancy__head .btn-main").click(function(e) {
 		slidesToScroll: 1,
 	});
 
+	$('.slider-acquaintance').slick({
+		arrows: true,
+		dots: false,
+		infinite: false,
+		slidesToShow: 2,
+		slidesToScroll: 2,
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 1,
+		slidesToScroll: 1,
+		adaptiveHeight: true,
+			}
+		}
+		]
+	});
+
+	$('.slider-gallery').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+	});
+
 	$('.tabs li a').click(function(event) {
 		event.preventDefault();
 		$(this).parent().parent().find("li").removeClass('active');
@@ -211,6 +237,17 @@ $(".item-vacancy__head .btn-main").click(function(e) {
 		$(".tab-container-card").find(".tab-pane-card").hide();
 		var selectTab4 = $(this).attr("href");
 		$(selectTab4).fadeIn(200);
+	});
+
+	$('.tabs-animals li a').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(".tab-container-animals").find(".tab-pane-animals").hide();
+		var selectTab4 = $(this).attr("href");
+		$(selectTab4).fadeIn(200);
+
+		$('.tab-container-animals .slider-gallery').slick('refresh');
 	});
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
