@@ -1748,6 +1748,7 @@
     }
     .unit_return .unit__title > *:nth-child(3) {
         font-size: 27px;
+                line-height: 45px;
     }
     .unit_return.unit_offer .unit__title > *:nth-child(4) {
         line-height: 48px;
