@@ -18,8 +18,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.7" />
-	<link rel="stylesheet" href="css/media.css?ver=1.7" />
+	<link rel="stylesheet" href="css/main.css?ver=1.6" />
+	<link rel="stylesheet" href="css/media.css?ver=1.6" />
 </head>
 <body>
 
@@ -39,7 +39,7 @@
 						<img src="img/logo.png" alt="alt">
 					</a>
 				</div>
-				<div class="header__content"> 
+				<div class="header__content">
 					<div class="header__left">
 						<div class="contacts-wrap">
 							<a href="tel:+79140308267" class="phone-main">+7 (914) 030 82 67</a>
@@ -112,8 +112,8 @@
 			<div class="sidebar sidebar_page">
 				<ul class="menu-sidebar">
 					<li>
-						<div class="menu-sidebar__name active">Молочная продукция <i class="fal fa-plus-circle"></i></div>
-						<div class="menu-sidebar__content" style="display: block;">
+						<div class="menu-sidebar__name">Молочная продукция <i class="fal fa-plus-circle"></i></div>
+						<div class="menu-sidebar__content">
 							<ul>
 								<li><a href="#">Молоко, сливки</a></li>
 								<li><a href="#">Йогурты</a></li>
@@ -127,17 +127,14 @@
 						</div>
 					</li>
 					<li>
-						<div class="menu-sidebar__name">Замороженные полуфабрикаты <i class="fal fa-plus-circle"></i></div>
-						<div class="menu-sidebar__content">
+						<div class="menu-sidebar__name active">Замороженные полуфабрикаты <i class="fal fa-plus-circle"></i></div>
+						<div class="menu-sidebar__content" style="display: block;">
 							<ul>
-								<li><a href="#">Молоко, сливки</a></li>
-								<li><a href="#">Йогурты</a></li>
-								<li><a href="#">Кисломолочные продукты</a></li>
-								<li><a href="#">Творог, сырки, массы творожные</a></li>
-								<li><a href="#">Десерты</a></li>
-								<li><a href="#">Сыворотка и напитки</a></li>
-								<li><a href="#">Сыры</a></li>
-								<li><a href="#">Масло</a></li>
+								<li><a href="#">Пельмени, вареники, манты, посикунчики</a></li>
+								<li><a href="#">Блинчики</a></li>
+								<li><a href="#">Сырники</a></li>
+								<li><a href="#">Котлеты, биточки, фрикадельки, фарши</a></li>
+								<li><a href="#">Голубцы, купаты, зразы</a></li>
 							</ul>
 						</div>
 					</li>
@@ -235,36 +232,37 @@
 			</div>
 
 			<div class="content content_page">
-				<div class="sales">
-					<div class="title-section">акции</div>
-					<div class="row row_products">
-						<div class="col-lg-4 col-md-6">
-							<a href="#" class="item-product">
-								<span class="item-product__image">
-									<img src="img/product1.png" alt="alt">
-								</span>
-								<span class="item-product__date">14 июля 2021</span>
-								<span class="item-product__title">В последний день срока годности на молочные продукты скидка до 60%</span>
-							</a>
+				<div class="catalog-page">
+					<div class="title-section">Замороженные полуфабрикаты</div>
+					<ul class="tabs-products">
+						<li class="active"><a href="#">Пельмени, вареники, манты, посикунчики</a></li>
+						<li><a href="#">Котлеты, биточки, фрикадельки, фарши </a></li>
+						<li><a href="#">Голубцы, купаты, зразы</a></li>
+						<li><a href="#">Блинчики </a></li>
+						<li><a href="#">Сырники </a></li>
+					</ul>
+					<div class="row row_catalog">
+						<div class="col-lg-3 col-md-6">
+							<div class="item-catalog">
+								<div class="status-catalog status-catalog_orange">К вашей каше</div>
+								<a href="#" class="btn-like"></a>
+								<a href="#" class="item-catalog__image">
+									<img src="img/catalog5.jpg" alt="alt">
+								</a>
+								<a href="#" class="item-catalog__name">Сыр «Комкинский» с зеленью 34%, 200 г</a>
+								<div class="item-catalog__center">
+									<div class="item-catalog__oldprice">250 Р</div>
+									<div class="item-catalog__price">210 Р</div>
+									<div class="quantity">
+										<div class="quantity-button quantity-down">–</div>
+										<input type="number" min="1" step="1" value="2">
+										<div class="quantity-button quantity-up">+</div>
+									</div>
+								</div>
+								<a href="#" class="btn-main">В корзину</a>
+							</div>
 						</div>
-						<div class="col-lg-4 col-md-6">
-							<a href="#" class="item-product">
-								<span class="item-product__image">
-									<img src="img/product1.png" alt="alt">
-								</span>
-								<span class="item-product__date">14 июля 2021</span>
-								<span class="item-product__title">В последний день срока годности на молочные продукты скидка до 60%</span>
-							</a>
-						</div>
-						<div class="col-lg-4 sales__image">
-							<img src="img/sales.png" alt="alt">
-						</div>
-					</div>
-				</div>
-				<div class="catalog catalog_page">
-					<div class="title-section title-section_page">акционные товары</div>
-					<ul class="slider-catalog">
-						<li>
+						<div class="col-lg-3 col-md-6">
 							<div class="item-catalog">
 								<div class="status-catalog">Для сырничков</div>
 								<a href="#" class="btn-like"></a>
@@ -283,18 +281,18 @@
 								</div>
 								<a href="#" class="btn-main">В корзину</a>
 							</div>
-						</li>
-						<li>
+						</div>
+						<div class="col-lg-3 col-md-6">
 							<div class="item-catalog">
-								<div class="status-catalog status-catalog_orange">К вашей каше</div>
+								<div class="status-catalog status-catalog_purple">Когда нет времени</div>
 								<a href="#" class="btn-like"></a>
 								<a href="#" class="item-catalog__image">
-									<img src="img/catalog2.jpg" alt="alt">
+									<img src="img/catalog4.jpg" alt="alt">
 								</a>
-								<a href="#" class="item-catalog__name">Сливочное масло «Коломенское», 200 г</a>
+								<a href="#" class="item-catalog__name">Пельмени из телятины «Комарова», 500 г</a>
 								<div class="item-catalog__center">
-									<div class="item-catalog__oldprice">250 Р</div>
-									<div class="item-catalog__price">210 Р</div>
+									<div class="item-catalog__oldprice">270 Р</div>
+									<div class="item-catalog__price">250 Р</div>
 									<div class="quantity">
 										<div class="quantity-button quantity-down">–</div>
 										<input type="number" min="1" step="1" value="2">
@@ -303,8 +301,8 @@
 								</div>
 								<a href="#" class="btn-main">В корзину</a>
 							</div>
-						</li>
-						<li>
+						</div>
+						<div class="col-lg-3 col-md-6">
 							<div class="item-catalog">
 								<div class="status-catalog status-catalog_green">К сытному обеду</div>
 								<a href="#" class="btn-like"></a>
@@ -323,8 +321,8 @@
 								</div>
 								<a href="#" class="btn-main">В корзину</a>
 							</div>
-						</li>
-						<li>
+						</div>
+						<div class="col-lg-3 col-md-6">
 							<div class="item-catalog">
 								<div class="status-catalog status-catalog_purple">Когда нет времени</div>
 								<a href="#" class="btn-like"></a>
@@ -343,8 +341,108 @@
 								</div>
 								<a href="#" class="btn-main">В корзину</a>
 							</div>
-						</li>
-						<li>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="item-catalog">
+								<div class="status-catalog status-catalog_green">К сытному обеду</div>
+								<a href="#" class="btn-like"></a>
+								<a href="#" class="item-catalog__image">
+									<img src="img/catalog3.jpg" alt="alt">
+								</a>
+								<a href="#" class="item-catalog__name">Молодой козий сыр c крапивой, 200 г</a>
+								<div class="item-catalog__center">
+									<div class="item-catalog__oldprice">200 Р</div>
+									<div class="item-catalog__price">150 Р</div>
+									<div class="quantity">
+										<div class="quantity-button quantity-down">–</div>
+										<input type="number" min="1" step="1" value="2">
+										<div class="quantity-button quantity-up">+</div>
+									</div>
+								</div>
+								<a href="#" class="btn-main">В корзину</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="item-catalog">
+								<div class="status-catalog status-catalog_orange">К вашей каше</div>
+								<a href="#" class="btn-like"></a>
+								<a href="#" class="item-catalog__image">
+									<img src="img/catalog5.jpg" alt="alt">
+								</a>
+								<a href="#" class="item-catalog__name">Сыр «Комкинский» с зеленью 34%, 200 г</a>
+								<div class="item-catalog__center">
+									<div class="item-catalog__oldprice">250 Р</div>
+									<div class="item-catalog__price">210 Р</div>
+									<div class="quantity">
+										<div class="quantity-button quantity-down">–</div>
+										<input type="number" min="1" step="1" value="2">
+										<div class="quantity-button quantity-up">+</div>
+									</div>
+								</div>
+								<a href="#" class="btn-main">В корзину</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="item-catalog">
+								<div class="status-catalog">Для сырничков</div>
+								<a href="#" class="btn-like"></a>
+								<a href="#" class="item-catalog__image">
+									<img src="img/catalog1.jpg" alt="alt">
+								</a>
+								<a href="#" class="item-catalog__name">Масса творожная «Особая» с изюмом, 200 г</a>
+								<div class="item-catalog__center">
+									<div class="item-catalog__oldprice">150 Р</div>
+									<div class="item-catalog__price">110 Р</div>
+									<div class="quantity">
+										<div class="quantity-button quantity-down">–</div>
+										<input type="number" min="1" step="1" value="2">
+										<div class="quantity-button quantity-up">+</div>
+									</div>
+								</div>
+								<a href="#" class="btn-main">В корзину</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="item-catalog">
+								<div class="status-catalog status-catalog_orange">К вашей каше</div>
+								<a href="#" class="btn-like"></a>
+								<a href="#" class="item-catalog__image">
+									<img src="img/catalog5.jpg" alt="alt">
+								</a>
+								<a href="#" class="item-catalog__name">Сыр «Комкинский» с зеленью 34%, 200 г</a>
+								<div class="item-catalog__center">
+									<div class="item-catalog__oldprice">250 Р</div>
+									<div class="item-catalog__price">210 Р</div>
+									<div class="quantity">
+										<div class="quantity-button quantity-down">–</div>
+										<input type="number" min="1" step="1" value="2">
+										<div class="quantity-button quantity-up">+</div>
+									</div>
+								</div>
+								<a href="#" class="btn-main">В корзину</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="item-catalog">
+								<div class="status-catalog">Для сырничков</div>
+								<a href="#" class="btn-like"></a>
+								<a href="#" class="item-catalog__image">
+									<img src="img/catalog1.jpg" alt="alt">
+								</a>
+								<a href="#" class="item-catalog__name">Масса творожная «Особая» с изюмом, 200 г</a>
+								<div class="item-catalog__center">
+									<div class="item-catalog__oldprice">150 Р</div>
+									<div class="item-catalog__price">110 Р</div>
+									<div class="quantity">
+										<div class="quantity-button quantity-down">–</div>
+										<input type="number" min="1" step="1" value="2">
+										<div class="quantity-button quantity-up">+</div>
+									</div>
+								</div>
+								<a href="#" class="btn-main">В корзину</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
 							<div class="item-catalog">
 								<div class="status-catalog status-catalog_purple">Когда нет времени</div>
 								<a href="#" class="btn-like"></a>
@@ -363,8 +461,35 @@
 								</div>
 								<a href="#" class="btn-main">В корзину</a>
 							</div>
-						</li>
-					</ul>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="item-catalog">
+								<div class="status-catalog status-catalog_green">К сытному обеду</div>
+								<a href="#" class="btn-like"></a>
+								<a href="#" class="item-catalog__image">
+									<img src="img/catalog3.jpg" alt="alt">
+								</a>
+								<a href="#" class="item-catalog__name">Молодой козий сыр c крапивой, 200 г</a>
+								<div class="item-catalog__center">
+									<div class="item-catalog__oldprice">200 Р</div>
+									<div class="item-catalog__price">150 Р</div>
+									<div class="quantity">
+										<div class="quantity-button quantity-down">–</div>
+										<input type="number" min="1" step="1" value="2">
+										<div class="quantity-button quantity-up">+</div>
+									</div>
+								</div>
+								<a href="#" class="btn-main">В корзину</a>
+							</div>
+						</div>
+					</div>
+					<div class="pager">
+						<a class="prev page-numbers disabled" href="#"></a>
+						<span aria-current="page" class="page-numbers current" href="#">1</span>
+						<a class="page-numbers" href="#">2</a>
+						<a class="page-numbers" href="#">3</a>
+						<a class="next page-numbers" href="#"></a>
+					</div>
 				</div>
 				<footer class="footer">
 					<div class="footer__wrap">
@@ -459,7 +584,7 @@
 <script src="libs/scroll2id/PageScroll2id.min.js"></script>
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.7"></script>
+<script src="js/common.js?ver=1.6"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
