@@ -1020,6 +1020,7 @@ input[type=number]
 }
 .checkbox {
 	font-size: 13px;
+	line-height: 18px;
 	font-family: 'PT Sans';
 	text-align: left;
 }
@@ -1744,17 +1745,25 @@ input[type=number]
 	background-color: #fff;
 }
 .item-product__image {
-	padding:10px;
 	height: 275px;
 	margin-bottom: 13px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background-color: #f0ede8;
+	overflow: hidden;
+}
+.item-product:hover .item-product__image img {
+	transform: scale(1.05);
 }
 .item-product__image img {
-	max-width: 100%;
-	max-height: 100%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	font-family: 'object-fit: cover;';
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .item-product__date {
 	font-size: 18px;
@@ -2470,4 +2479,47 @@ color: #000007;
 }
 .about-section_factory .about-section__content {
 	margin-left: -40px;
+}
+.row_news {
+	margin: 0 -12px;
+	margin-bottom: 15px;
+}
+.row_news > div {
+	padding: 0 12px;
+	margin-bottom: 23px;
+}
+.item-product__image {
+	padding: 0;
+}
+.news {
+	padding-bottom: 50px;
+}
+.tabs-news {
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.tabs-news a {
+	margin-bottom: 10px;
+	min-width: 181px;
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: 700;
+	letter-spacing: 0.01em;
+	color: #000007;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	font-family: 'Lifehack';
+	text-transform: uppercase;
+	text-align: center;
+	transition: all 0.3s;
+}
+.tabs-news .active a {
+	background-image: url(../img/button3.png);
 }
