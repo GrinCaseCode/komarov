@@ -2657,16 +2657,16 @@ color: #1d1d1b;
 	padding-left: 34px;
 	background-color: #ffffff;
 	font-size: 18px;
-line-height: 24px;
+line-height: 24px; 
 color: #000007;
 } 
-.article {
+.article { 
 	padding-bottom: 60px;
 } 
 .article-block h1 {
 	font-size: 48px;
 line-height: 1.2;
-font-weight: 700;
+font-weight: 700; 
 margin-bottom: 7px;
 letter-spacing: 0.05em;
 font-family: 'Lifehack';
