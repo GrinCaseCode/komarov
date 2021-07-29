@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.7" />
+	<link rel="stylesheet" href="css/media.css?ver=1.7" />
+</head> 
+<body>
+
+	<div class="wrapper">
+
+		<div class="buttons-mobile">
+			<a href="#" class="btn-mobile"><i class="fal fa-home"></i></a>
+			<a href="tel:+79140308267" class="btn-mobile"><i class="fal fa-phone"></i></a>
+			<a href="#" class="btn-mobile"><img src="img/like.svg" alt="alt"></a>
+			<a href="#" class="btn-mobile"><img src="img/cart.svg" alt="alt"></i><span class="btn-mobile__value">1</span></a>
+		</div>
+
+		<header class="header header_page default">
+			<div class="header__wrap">
+				<div class="logo-wrap">
+					<a href="#" class="logo">
+						<img src="img/logo.png" alt="alt">
+					</a> 
+				</div>
+				<div class="header__content"> 
+					<div class="header__left">
+						<div class="contacts-wrap">
+							<a href="tel:+79140308267" class="phone-main">+7 (914) 030 82 67</a>
+							<ul class="list-social">
+								<li><a href="#"><img src="img/wa.svg" alt="alt"></a></li>
+								<li><a href="#"><img src="img/viber.svg" alt="alt"></a></li>
+								<li><a href="#"><img src="img/tg.svg" alt="alt"></a></li>
+							</ul>
+						</div>
+						<a href="#callback" class="btn-main fancybox">Перезвоните мне</a>
+					</div>
+					<div class="header__right">
+						<a href="#" class="btn-sidebar">
+							<span class="btn-sidebar__icon"><img src="img/cart.svg" alt="alt"><span class="btn-sidebar__value">5</span></span>
+							<span>Итого: <strong>2 500 Р</strong></span>
+						</a>
+						<a href="#" class="btn-sidebar">
+							<span class="btn-sidebar__icon"><img src="img/like.svg" alt="alt"></span>
+							<span>Избранное</span>
+						</a>
+					</div>
+					<span class="btn_nav">
+						<span class='sandwich'>
+							<span class='sw-topper'></span>
+							<span class='sw-bottom'></span>
+							<span class='sw-footer'></span>
+						</span>
+					</span>
+					<div class="menu-dropdown">
+						<div class="row">
+							<div class="col-lg-3">
+								<a href="#">Каталог</a>
+								<ul class="menu-dropdown_min">
+									<li><a href="#">Молочные продукты</a></li>
+									<li><a href="#">Мясная гастрономия</a></li>
+									<li><a href="#">Мясо</a></li>
+									<li><a href="#">Замороженные полуфабрикаты</a></li>
+									<li><a href="#">Овощи, соленья</a></li>
+									<li><a href="#">Морсы</a></li>
+									<li><a href="#">Корма </a></li>
+									<li><a href="#">Животные</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3">
+								<ul>
+									<li><a href="#">Акции</a></li>
+									<li><a href="#">О компании</a></li>
+									<li><a href="#">Где купить</a></li>
+									<li><a href="#">Доставка и оплата</a></li>
+									<li><a href="#">Возврат</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3">
+								<ul>
+									<li><a href="#">Сотрудничество</a></li>
+									<li><a href="#">Вакансии</a></li>
+									<li><a href="#">Документация</a></li>
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="page-wrapper">
+
+			<div class="sidebar sidebar_page">
+				<ul class="menu-sidebar">
+					<li>
+						<div class="menu-sidebar__name active">Молочная продукция <i class="fal fa-plus-circle"></i></div>
+						<div class="menu-sidebar__content" style="display: block;">
+							<ul>
+								<li><a href="#">Молоко, сливки</a></li>
+								<li><a href="#">Йогурты</a></li>
+								<li><a href="#">Кисломолочные продукты</a></li>
+								<li><a href="#">Творог, сырки, массы творожные</a></li>
+								<li><a href="#">Десерты</a></li>
+								<li><a href="#">Сыворотка и напитки</a></li>
+								<li><a href="#">Сыры</a></li>
+								<li><a href="#">Масло</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="menu-sidebar__name">Замороженные полуфабрикаты <i class="fal fa-plus-circle"></i></div>
+						<div class="menu-sidebar__content">
+							<ul>
+								<li><a href="#">Молоко, сливки</a></li>
+								<li><a href="#">Йогурты</a></li>
+								<li><a href="#">Кисломолочные продукты</a></li>
+								<li><a href="#">Творог, сырки, массы творожные</a></li>
+								<li><a href="#">Десерты</a></li>
+								<li><a href="#">Сыворотка и напитки</a></li>
+								<li><a href="#">Сыры</a></li>
+								<li><a href="#">Масло</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="menu-sidebar__name">Мясо <i class="fal fa-plus-circle"></i></div>
+						<div class="menu-sidebar__content">
+							<ul>
+								<li><a href="#">Молоко, сливки</a></li>
+								<li><a href="#">Йогурты</a></li>
+								<li><a href="#">Кисломолочные продукты</a></li>
+								<li><a href="#">Творог, сырки, массы творожные</a></li>
+								<li><a href="#">Десерты</a></li>
+								<li><a href="#">Сыворотка и напитки</a></li>
+								<li><a href="#">Сыры</a></li>
+								<li><a href="#">Масло</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="menu-sidebar__name">Мясная гастрономия <i class="fal fa-plus-circle"></i></div>
+						<div class="menu-sidebar__content">
+							<ul>
+								<li><a href="#">Молоко, сливки</a></li>
+								<li><a href="#">Йогурты</a></li>
+								<li><a href="#">Кисломолочные продукты</a></li>
+								<li><a href="#">Творог, сырки, массы творожные</a></li>
+								<li><a href="#">Десерты</a></li>
+								<li><a href="#">Сыворотка и напитки</a></li>
+								<li><a href="#">Сыры</a></li>
+								<li><a href="#">Масло</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="menu-sidebar__name">Овощи, соленья <i class="fal fa-plus-circle"></i></div>
+						<div class="menu-sidebar__content">
+							<ul>
+								<li><a href="#">Молоко, сливки</a></li>
+								<li><a href="#">Йогурты</a></li>
+								<li><a href="#">Кисломолочные продукты</a></li>
+								<li><a href="#">Творог, сырки, массы творожные</a></li>
+								<li><a href="#">Десерты</a></li>
+								<li><a href="#">Сыворотка и напитки</a></li>
+								<li><a href="#">Сыры</a></li>
+								<li><a href="#">Масло</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="menu-sidebar__name">Морсы <i class="fal fa-plus-circle"></i></div>
+						<div class="menu-sidebar__content">
+							<ul>
+								<li><a href="#">Молоко, сливки</a></li>
+								<li><a href="#">Йогурты</a></li>
+								<li><a href="#">Кисломолочные продукты</a></li>
+								<li><a href="#">Творог, сырки, массы творожные</a></li>
+								<li><a href="#">Десерты</a></li>
+								<li><a href="#">Сыворотка и напитки</a></li>
+								<li><a href="#">Сыры</a></li>
+								<li><a href="#">Масло</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="menu-sidebar__name">Корма <i class="fal fa-plus-circle"></i></div>
+						<div class="menu-sidebar__content">
+							<ul>
+								<li><a href="#">Молоко, сливки</a></li>
+								<li><a href="#">Йогурты</a></li>
+								<li><a href="#">Кисломолочные продукты</a></li>
+								<li><a href="#">Творог, сырки, массы творожные</a></li>
+								<li><a href="#">Десерты</a></li>
+								<li><a href="#">Сыворотка и напитки</a></li>
+								<li><a href="#">Сыры</a></li>
+								<li><a href="#">Масло</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="menu-sidebar__name">Животные <i class="fal fa-plus-circle"></i></div>
+						<div class="menu-sidebar__content">
+							<ul>
+								<li><a href="#">Молоко, сливки</a></li>
+								<li><a href="#">Йогурты</a></li>
+								<li><a href="#">Кисломолочные продукты</a></li>
+								<li><a href="#">Творог, сырки, массы творожные</a></li>
+								<li><a href="#">Десерты</a></li>
+								<li><a href="#">Сыворотка и напитки</a></li>
+								<li><a href="#">Сыры</a></li>
+								<li><a href="#">Масло</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="content content_page">
+				<div class="contacts-section">
+					<div class="title-section">контакты</div>
+					<div class="contacts-wrapper">
+						<div class="contacts-wrapper__head">
+							<div class="contacts-wrapper__item">
+								<a href="tel:+79140308267" class="phone-main">+7 (914) 030 82 67</a>
+								<ul class="list-social">
+									<li><a href="#"><img src="img/wa.svg" alt="alt"></a></li>
+									<li><a href="#"><img src="img/viber.svg" alt="alt"></a></li>
+									<li><a href="#"><img src="img/tg.svg" alt="alt"></a></li>
+								</ul>
+							</div>
+							<div class="contacts-wrapper__item">
+								<p><strong>График работы фирменных магазинов «Комарова»</strong></p>
+								<p>ПН - СБ с 9.00 до 20.00, ВС с 9.00 до 19.00</p>
+							</div>
+							<div class="contacts-wrapper__item">
+								<p><strong>Почта:</strong></p>
+								<p><a href="mailto:">komarovamagadan@mail.ru</a></p>
+							</div>
+							<div class="contacts-wrapper__item">
+								<p><strong>Instagram:</strong></p>
+								<p>#fermakomarova</p>
+							</div>
+						</div>
+						<div class="contacts-title">Ферма, производство</div>
+						<div class="row">
+							<div class="col-lg-4 col-md-6">
+								<div class="contacts-unit">
+									<p><strong>Индивидуальный предприниматель Глава КФХ</strong> </p>
+									<p class="contacts-unit__name">Комар Сергей Васильевич</p>
+									<p><a href="mailto:komar_sv@list.ru">komar_sv@list.ru</a></p>
+								</div>
+								<div class="contacts-unit">
+									<p><strong>Продажа производимой продукции Закупки для производств (упаковка, ингредиенты) Логистика</strong> </p>
+									<p class="contacts-unit__name">Васильева Анастасия</p>
+									<p><a href="tel:+89140308267">8 (914) 030 82 67</a></p>
+									<p><a href="mailto:komar_sv@list.ru">komar_sv@list.ru</a></p>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="contacts-unit">
+									<p><strong>Юридический адрес:</strong> </p>
+									<p class="contacts-unit__name">685001 г. Магадан,</p>
+									<p>ул. Майская, 51</p>
+								</div>
+								<div class="contacts-unit">
+									<p><strong>Поставки продукции в бюджетные учреждения</strong> </p>
+									<p class="contacts-unit__name">Ильиных Юлия</p>
+									<p><a href="tel:+89248585550">8 (924) 858 55 50</a></p>
+									<p><a href="mailto:komar_sv@list.ru">komar_sv@list.ru</a></p>
+								</div>
+								<div class="contacts-unit">
+									<p><strong>Сверка с покупателями </strong> </p>
+									<p class="contacts-unit__name">Гринчук Людмила Анатольевна</p>
+									<p><a href="tel:+89248556500">8 (924) 855 65 00</a></p>
+									<p><a href="mailto:komarova_magadan@mail.ru">komarova_magadan@mail.ru</a></p>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="contacts-unit">
+									<p><strong>Почтовый адрес:</strong> </p>
+									<p class="contacts-unit__name">685000 г. Магадан, </p>
+									<p>ул. Дзержинского, 5 оф.,«Комарова»</p>
+								</div>
+								<div class="contacts-unit">
+									<p><strong>Делопроизводитель <br>Заключение договоров поставки </strong></p>
+									<p class="contacts-unit__name">Екель Ирина</p>
+									<p><a href="tel:+89246901806">8 (924) 690 18 06</a></p>
+									<p><a href="mailto:komar_sv@list.ru">komar_sv@list.ru</a></p>
+								</div>
+								<div class="contacts-unit">
+									<p><strong>Бухгалтерия </strong> </p>
+									<p><a href="tel:+84132644797">8 (4132) 64 47 97</a></p>
+									<p><a href="mailto:komarova_magadan@mail.ru">komarova_magadan@mail.ru</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="contacts-title">Розничная сеть</div>
+						<div class="row">
+							<div class="col-lg-4 col-md-6">
+								<div class="contacts-unit">
+									<p><strong>Юридический адрес:</strong> </p>
+									<p class="contacts-unit__name">685000 г. Магадан,</p>
+									<p>ул. Дзержинского, 5 оф.,«Комарова»</p>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="contacts-unit">
+									<p><strong>  Руководитель розничной сети. <br>Закупки </strong></p>
+									<p class="contacts-unit__name">Васильева Анастасия</p>
+									<p><a href="tel:+89140308267">8 (914) 030 82 67</a></p>
+									<p><a href="mailto:komarova_magadan@mail.ru">komarova_magadan@mail.ru</a></p>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="contacts-unit">
+									<p><strong>Делопроизводитель <br>Заключение договоров поставки Екель Ирина </strong></p>
+									<p class="contacts-unit__name">Екель Ирина</p>
+									<p><a href="tel:+89246901806">8 (924) 690 18 06</a></p>
+									<p><a href="mailto:komar_sv@list.ru">komar_sv@list.ru</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="contacts-callback">
+							<div class="contacts-callback__wrap">
+								<div class="contacts-callback__title">Обратная связь</div>
+								<form>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="item-form">
+												<input type="text" placeholder="Имя" required="required">
+											</div>
+											<div class="item-form">
+												<input type="text" placeholder="+7 (___) ___-__-__" class="input-phone" required="required">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="item-form">
+												<input type="email" placeholder="E-mail" required="required">
+											</div>
+											<div class="item-form">
+												<input type="text" placeholder="Сообщение" required="required">
+											</div>
+										</div>
+									</div>
+									<button class="btn-main btn-main_page">напишите нам</button>
+									<div class="checkbox-wrap">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" required="required" checked="checked" />
+												<span>Согласие на обработку персональных данных</span>
+											</label>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<ul class="tabs-contacts">
+						<li class="active"><a href="#tab_contact1">Магазины «Комарова»</a></li>
+						<li><a href="#tab_contact2">Магазины партнеров</a></li>
+					</ul>
+					<div class="tab-container-contacts">
+						<div class="tab-pane-contacts" id="tab_contact1">
+							<div class="map-wrap">
+								<div class="map-info">
+									<ul class="list-map">
+										<li>
+											<div class="list-map__title">ул. Комсомольская, 12</div>
+											<p>Ежедневно: с 8:00 до 19:00 </p>
+											<p>тел. <a href="tel:+79141234567">+7 (914) 123 45 67</a></p>
+										</li>
+										<li>
+											<div class="list-map__title">ул. Набережная реки Магадан,5</div>
+											<p>Ежедневно: с 8:00 до 19:00 </p>
+											<p>тел. <a href="tel:+79141234567">+7 (914) 123 45 67</a></p>
+										</li>
+										<li>
+											<div class="list-map__title">ул. Горького,23</div>
+											<p>Ежедневно: с 8:00 до 19:00 </p>
+											<p>тел. <a href="tel:+79141234567">+7 (914) 123 45 67</a></p>
+										</li>
+										<li>
+											<div class="list-map__title">ул. Ясная, 8</div>
+											<p>Ежедневно: с 8:00 до 19:00 </p>
+											<p>тел. <a href="tel:+79141234567">+7 (914) 123 45 67</a></p>
+										</li>
+										<li>
+											<div class="list-map__title">ул. Комсомольская, 12</div>
+											<p>Ежедневно: с 8:00 до 19:00 </p>
+											<p>тел. <a href="tel:+79141234567">+7 (914) 123 45 67</a></p>
+										</li>
+										<li>
+											<div class="list-map__title">ул. Набережная реки Магадан,5</div>
+											<p>Ежедневно: с 8:00 до 19:00 </p>
+											<p>тел. <a href="tel:+79141234567">+7 (914) 123 45 67</a></p>
+										</li>
+										<li>
+											<div class="list-map__title">ул. Горького,23</div>
+											<p>Ежедневно: с 8:00 до 19:00 </p>
+											<p>тел. <a href="tel:+79141234567">+7 (914) 123 45 67</a></p>
+										</li>
+										<li>
+											<div class="list-map__title">ул. Ясная, 8</div>
+											<p>Ежедневно: с 8:00 до 19:00 </p>
+											<p>тел. <a href="tel:+79141234567">+7 (914) 123 45 67</a></p>
+										</li>
+									</ul>
+								</div>
+								<div id="map-contact1" class="map-contact"></div>
+							</div>
+						</div>
+						<div class="tab-pane-contacts" id="tab_contact2">
+							<div class="map-wrap">
+								<div class="map-info">
+									<ul class="list-map">
+										<li>
+											<div class="list-map__title">ул. Комсомольская, 12</div>
+											<p>Ежедневно: с 8:00 до 19:00 </p>
+											<p>тел. <a href="tel:+79141234567">+7 (914) 123 45 67</a></p>
+										</li>
+										<li>
+											<div class="list-map__title">ул. Набережная реки Магадан,5</div>
+											<p>Ежедневно: с 8:00 до 19:00 </p>
+											<p>тел. <a href="tel:+79141234567">+7 (914) 123 45 67</a></p>
+										</li>
+										<li>
+											<div class="list-map__title">ул. Горького,23</div>
+											<p>Ежедневно: с 8:00 до 19:00 </p>
+											<p>тел. <a href="tel:+79141234567">+7 (914) 123 45 67</a></p>
+										</li>
+										<li>
+											<div class="list-map__title">ул. Ясная, 8</div>
+											<p>Ежедневно: с 8:00 до 19:00 </p>
+											<p>тел. <a href="tel:+79141234567">+7 (914) 123 45 67</a></p>
+										</li>
+										<li>
+											<div class="list-map__title">ул. Комсомольская, 12</div>
+											<p>Ежедневно: с 8:00 до 19:00 </p>
+											<p>тел. <a href="tel:+79141234567">+7 (914) 123 45 67</a></p>
+										</li>
+										<li>
+											<div class="list-map__title">ул. Набережная реки Магадан,5</div>
+											<p>Ежедневно: с 8:00 до 19:00 </p>
+											<p>тел. <a href="tel:+79141234567">+7 (914) 123 45 67</a></p>
+										</li>
+										<li>
+											<div class="list-map__title">ул. Горького,23</div>
+											<p>Ежедневно: с 8:00 до 19:00 </p>
+											<p>тел. <a href="tel:+79141234567">+7 (914) 123 45 67</a></p>
+										</li>
+										<li>
+											<div class="list-map__title">ул. Ясная, 8</div>
+											<p>Ежедневно: с 8:00 до 19:00 </p>
+											<p>тел. <a href="tel:+79141234567">+7 (914) 123 45 67</a></p>
+										</li>
+									</ul>
+								</div>
+								<div id="map-contact2" class="map-contact"></div>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+				<footer class="footer">
+					<div class="footer__wrap">
+						<div class="row">
+							<div class="col-lg-6 col-md-6">
+								<div class="footer__title footer__title_mob">О компании <i class="far fa-plus"></i></div>
+								<div class="footer__content">
+									<ul class="footer__nav">
+										<li><a href="#">О нас</a></li>
+										<li><a href="#">Где купить</a></li>
+										<li><a href="#">Сотрудничество</a></li>
+										<li><a href="#">Новости</a></li>
+										<li><a href="#">Документация</a></li>
+										<li><a href="#">Акции</a></li>
+										<li><a href="#">Доставка и оплата</a></li>
+										<li><a href="#">Возврат</a></li>
+										<li><a href="#">Вакансии</a></li>
+										<li><a href="#">Контакты</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3">
+								<div class="footer__title">Каталог <i class="far fa-plus"></i></div>
+								<div class="footer__content">
+									<ul class="footer__nav footer__nav_min">
+										<li><a href="#">Молочная продукция</a></li>
+										<li><a href="#">Замороженные полуфабрикаты</a></li>
+										<li><a href="#">Мясо</a></li>
+										<li><a href="#">Мясная гастрономия</a></li>
+										<li><a href="#">Морсы</a></li>
+										<li><a href="#">Корма</a></li>
+										<li><a href="#">Животные</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 footer__right">
+								<div class="footer__title footer__title_mob">Контакты <i class="far fa-plus"></i></div>
+								<div class="footer__content">
+									<p>г. Магадан, ул. Некрасова, 89  </p>
+									<p>Режим работы: с 8:00 до 19:00</p>
+									<br>
+									<p>Почта: </p>
+									<p><a href="mailto:komarovamagadan@mail.ru">komarovamagadan@mail.ru</a></p>
+									<div class="contacts-wrap">
+										<a href="tel:+79140308267" class="phone-main">+7 (914) 030 82 67</a>
+										<ul class="list-social">
+											<li><a href="#"><img src="img/wa2.svg" alt="alt"></a></li>
+											<li><a href="#"><img src="img/viber2.svg" alt="alt"></a></li>
+											<li><a href="#"><img src="img/tg2.svg" alt="alt"></a></li>
+										</ul>
+									</div>
+									<a href="#" class="instagram__link"><img src="img/insta_ic2.png" alt="alt">#fermakomarova</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<div class="footer__wrap">
+							<div class="row align-items-center">
+								<div class="col-lg-3 col-md-3">
+									<a href="#">Политика конфиденциальности</a>
+								</div>
+								<div class="col-lg-3 col-md-3 col_copyright">
+									<p>г. Симферополь © Copyright  2021 г.</p>
+								</div>
+								<div class="col-lg-3 col-md-3">
+									<div class="create">Сделано в <img src="img/copy.svg" alt="alt"></div>
+								</div>
+								<div class="col-lg-3 col-md-3 align_right">
+									<a href="#" class="btn_top"><i class="fa fa-arrow-up"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+<script src="libs/mask/jquery.maskedinput.js"></script>
+<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+<script src="js/common.js?ver=1.7"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script>
+	$(document).ready(function() {
+		ymaps.ready(init);
+
+		function init() {
+			var myMap = new ymaps.Map('map-contact1', {
+				center: [59.558375, 150.810664],
+				zoom: 15
+			}, {
+				searchControlProvider: 'yandex#search'
+			});		
+			{
+				if ($(window).width() < 768) {
+					myMap.setZoom(13);
+				}
+			}
+			myPlacemark1 = new ymaps.Placemark([59.555238, 150.823362], {
+				balloonContent: '<p class="text-map">ул. Комсомольская, 12</p>'
+			}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'img/pin.png',
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [30, 39],
+				iconImageOffset: [-15, -39],
+				balloonOffset: [ 0, -39 ]
+			});
+			myPlacemark2 = new ymaps.Placemark([59.561654, 150.822844], {
+				balloonContent: '<p class="text-map">ул. Набережная реки Магадан,5</p>'
+			}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'img/pin.png',
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [30, 39],
+				iconImageOffset: [-15, -39],
+				balloonOffset: [ 0, -39 ]
+			});
+			myPlacemark3 = new ymaps.Placemark([59.562714, 150.813856], {
+				balloonContent: '<p class="text-map">ул. Горького,23</p>'
+			}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'img/pin.png',
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [30, 39],
+				iconImageOffset: [-15, -39],
+				balloonOffset: [ 0, -39 ]
+			});
+			myPlacemark4 = new ymaps.Placemark([59.552654, 150.795958], {
+				balloonContent: '<p class="text-map">ул. Ясная, 8</p>'
+			}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'img/pin.png',
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [30, 39],
+				iconImageOffset: [-15, -39],
+				balloonOffset: [ 0, -39 ]
+			});
+			myMap.controls.remove('searchControl');
+			myMap.behaviors.disable('scrollZoom');
+			myMap.geoObjects.add(myPlacemark1);
+			myMap.geoObjects.add(myPlacemark2);
+			myMap.geoObjects.add(myPlacemark3);
+			myMap.geoObjects.add(myPlacemark4);
+		}
+	});
+
+	$(document).ready(function() {
+		ymaps.ready(init);
+
+		function init() {
+			var myMap = new ymaps.Map('map-contact2', {
+				center: [59.558375, 150.810664],
+				zoom: 15
+			}, {
+				searchControlProvider: 'yandex#search'
+			});
+			{
+				if ($(window).width() < 768) {
+					myMap.setZoom(13);
+				}
+			}
+			myPlacemark1 = new ymaps.Placemark([59.555238, 150.823362], {
+				balloonContent: '<p class="text-map">ул. Комсомольская, 12</p>'
+			}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'img/pin.png',
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [30, 39],
+				iconImageOffset: [-15, -39],
+				balloonOffset: [ 0, -39 ]
+			});
+			myPlacemark2 = new ymaps.Placemark([59.561654, 150.822844], {
+				balloonContent: '<p class="text-map">ул. Набережная реки Магадан,5</p>'
+			}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'img/pin.png',
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [30, 39],
+				iconImageOffset: [-15, -39],
+				balloonOffset: [ 0, -39 ]
+			});
+			myPlacemark3 = new ymaps.Placemark([59.562714, 150.813856], {
+				balloonContent: '<p class="text-map">ул. Горького,23</p>'
+			}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'img/pin.png',
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [30, 39],
+				iconImageOffset: [-15, -39],
+				balloonOffset: [ 0, -39 ]
+			});
+			myPlacemark4 = new ymaps.Placemark([59.552654, 150.795958], {
+				balloonContent: '<p class="text-map">ул. Ясная, 8</p>'
+			}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'img/pin.png',
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [30, 39],
+				iconImageOffset: [-15, -39],
+				balloonOffset: [ 0, -39 ]
+			});
+			myMap.controls.remove('searchControl');
+			myMap.behaviors.disable('scrollZoom');
+			myMap.geoObjects.add(myPlacemark1);
+			myMap.geoObjects.add(myPlacemark2);
+			myMap.geoObjects.add(myPlacemark3);
+			myMap.geoObjects.add(myPlacemark4);
+		}
+	});
+</script> 
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
