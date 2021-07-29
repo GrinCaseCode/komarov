@@ -179,7 +179,7 @@ $(".item-vacancy__head .btn-main").click(function(e) {
 	$('.slider-acquaintance').slick({
 		arrows: true,
 		dots: false,
-		infinite: false,
+		infinite: true,
 		slidesToShow: 2,
 		slidesToScroll: 2,
 		responsive: [
