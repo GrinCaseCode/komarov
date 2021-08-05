@@ -1,5 +1,42 @@
 $(document).ready(function() {
 
+/*input file*/
+  $("input[type='file']").change(function(){
+    var filename_text = $(this).parent().siblings(".name-upload");
+    var filename = $(this).val().replace(/.*\\/, "");
+    filename_text.html(filename);
+  });
+  
+/*правки*/
+$('.item-advantage__title').each(function() {
+$(this).waypoint(function(direction) {
+		if (direction === "down") {
+			$(this).parent().parent().parent().parent().addClass("active");
+		} else if (direction === "up") {
+			$(this).parent().parent().parent().parent().removeClass("active");
+		};
+	}, {offset: 600});
+});
+
+$(document).mouseup(function (e){ 
+    var div = $(".menu-dropdown"); 
+    if (!div.is(e.target) 
+      && div.has(e.target).length === 0) { 
+	$(".menu-dropdown").fadeOut(200);
+			$(".sandwich").removeClass("active");
+ }
+});
+
+$('.cooperation .tabs-products li a').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(".tab-pane-cooperation").hide();
+		var selectTab5 = $(this).attr("href");
+		$(selectTab5).fadeIn(200);
+	});
+
+
 
 //прилипающие меню
 var $menu = $(".header");
@@ -23,12 +60,13 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 
 
 	//кнопка sandwich
+	/*правки*/
 	$(".btn_nav").click(function() {
-		$(".sandwich").toggleClass("active");
+		
 		if ($(".menu-dropdown").is(":hidden")) {
 			$(".menu-dropdown").fadeIn(200);
+			$(".sandwich").addClass("active");
 		} else {
-			$(".menu-dropdown").fadeOut(200);
 		}
 		
 	});
@@ -39,11 +77,11 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		});
 
 
-	$(".menu-sidebar__name").click(function() {
-		$(this).toggleClass("active");
-		$(this).siblings(".menu-sidebar__content").slideToggle(200);
-		$(this).parent().siblings().find(".menu-sidebar__content").slideUp(200);
-		$(this).parent().siblings().find(".menu-sidebar__name").removeClass("active");
+	$(".menu-sidebar__name i").click(function() {
+		$(this).parent().toggleClass("active");
+		$(this).parent().siblings(".menu-sidebar__content").slideToggle(200);
+		$(this).parent().parent().siblings().find(".menu-sidebar__content").slideUp(200);
+		$(this).parent().parent().siblings().find(".menu-sidebar__name").removeClass("active");
 	});
 
 	$(".item-vacancy__head").click(function() {
