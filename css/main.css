@@ -2188,12 +2188,14 @@ input[type=number]
 	background-position: left 45% top;
 	background-size: 408px auto;
 }
-.slick-slide:nth-child(even) .item-acquaintance {
+
+/*change*/
+.item-acquaintance:last-child  {
 	max-width: 540px;
 	text-align: right;
 	float: right;
 }
-.slick-slide:nth-child(even) .item-acquaintance__image {
+.item-acquaintance:last-child .item-acquaintance__image {
 	order: -1;
 	margin-left: 35px;
 }
@@ -3307,4 +3309,50 @@ color: #f0852a;
 .fancybox-lock {
 	    overflow: visible !important;
     margin-right: auto !important;
+}
+
+/*change*/
+.slider-acquaintance__wrap {
+	display: flex;
+	justify-content: space-between;
+}
+.slider-acquaintance {
+	background-image: none;
+}
+.slider-acquaintance__image {
+	margin-left: -104px;
+	width: 34%;
+}
+.slider-acquaintance__image img {
+	max-width: 100%;
+}
+.item-acquaintance {
+	position: relative;
+	z-index: 2;
+}
+.slider-acquaintance {
+	padding-bottom: 50px;
+}
+
+/*map*/
+.list-map li {
+	padding: 20px 0;
+	padding-left: 60px;
+	margin: 0 !important;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+.list-map li:hover {
+	background-color: #ededed;
+}
+.list-map li.active {
+	    background-color: #f1862a;
+    color: #fff;
+}
+.list-map li.active * {
+	color: #fff;
+		transition: all 0.3s;
+}
+.map-info {
+	padding-left: 0 !important;
 }

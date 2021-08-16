@@ -214,12 +214,14 @@ $(".item-vacancy__head .btn-main").click(function(e) {
 		slidesToScroll: 1,
 	});
 
+
+/*change*/
 	$('.slider-acquaintance').slick({
 		arrows: true,
 		dots: false,
 		infinite: true,
-		slidesToShow: 2,
-		slidesToScroll: 2,
+		slidesToShow: 1,
+		slidesToScroll: 1,
 		responsive: [
 		{
 			breakpoint: 992,
