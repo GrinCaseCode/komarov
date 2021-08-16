@@ -1194,22 +1194,22 @@
 							<div class="map-wrap">
 								<div class="map-info">
 									<ul class="list-map">
-										<li>
+										<li id="map_item1">
 											<div class="list-map__title">ул. Комсомольская, 12</div>
 											<p>Ежедневно: с 8:00 до 19:00 </p>
 											<p>тел. <a href="tel:+79141234567">+7 (914) 123 45 67</a></p>
 										</li>
-										<li>
+										<li id="map_item2">
 											<div class="list-map__title">ул. Набережная реки Магадан,5</div>
 											<p>Ежедневно: с 8:00 до 19:00 </p>
 											<p>тел. <a href="tel:+79141234567">+7 (914) 123 45 67</a></p>
 										</li>
-										<li>
+										<li id="map_item3">
 											<div class="list-map__title">ул. Горького,23</div>
 											<p>Ежедневно: с 8:00 до 19:00 </p>
 											<p>тел. <a href="tel:+79141234567">+7 (914) 123 45 67</a></p>
 										</li>
-										<li>
+										<li id="map_item4">
 											<div class="list-map__title">ул. Ясная, 8</div>
 											<p>Ежедневно: с 8:00 до 19:00 </p>
 											<p>тел. <a href="tel:+79141234567">+7 (914) 123 45 67</a></p>
@@ -1545,73 +1545,79 @@
 			myMap.geoObjects.add(myPlacemark2);
 			myMap.geoObjects.add(myPlacemark3);
 			myMap.geoObjects.add(myPlacemark4);
+
+			$( ".list-map li" ).click(function() {
+				$(this).siblings().removeClass("active");
+				$(this).addClass("active");
+			})
+
+			$( "#map_item1" ).click(function() {
+				myMap.setCenter([59.555238, 150.823362]);
+				myPlacemark1.balloon.open();
+				myPlacemark1.options.set({iconImageHref: 'img/pin2.png'});
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+			})
+
+			$( "#map_item2" ).click(function() {
+				myMap.setCenter([59.561654, 150.822844]);
+				myPlacemark2.balloon.open();
+				myPlacemark2.options.set({iconImageHref: 'img/pin2.png'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+			})
+
+			$( "#map_item3" ).click(function() {
+				myMap.setCenter([59.562714, 150.813856]);
+				myPlacemark3.balloon.open();
+				myPlacemark3.options.set({iconImageHref: 'img/pin2.png'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+			})
+
+			$( "#map_item4" ).click(function() {
+				myMap.setCenter([59.552654, 150.795958]);
+				myPlacemark4.balloon.open();
+				myPlacemark4.options.set({iconImageHref: 'img/pin2.png'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin.png'});
+			})
+
+			myPlacemark1.events.add('click', function (e) {
+				e.get('target').options.set('iconImageHref', 'img/pin2.png'); 
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+			});
+			myPlacemark2.events.add('click', function (e) {
+				e.get('target').options.set('iconImageHref', 'img/pin2.png'); 
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+			});
+			myPlacemark3.events.add('click', function (e) {
+				e.get('target').options.set('iconImageHref', 'img/pin2.png'); 
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+			});
+			myPlacemark4.events.add('click', function (e) {
+				e.get('target').options.set('iconImageHref', 'img/pin2.png');
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+			});
 		}
 	});
 
-	$(document).ready(function() {
-		ymaps.ready(init);
 
-		function init() {
-			var myMap = new ymaps.Map('map-contact2', {
-				center: [59.558375, 150.810664],
-				zoom: 15
-			}, {
-				searchControlProvider: 'yandex#search'
-			});
-			{
-				if ($(window).width() < 768) {
-					myMap.setZoom(13);
-				}
-			}
-			myPlacemark1 = new ymaps.Placemark([59.555238, 150.823362], {
-				balloonContent: '<p class="text-map">ул. Комсомольская, 12</p>'
-			}, {
-				iconLayout: 'default#image',
-				iconImageHref: 'img/pin.png',
-				hideIconOnBalloonOpen: false,
-				iconImageSize: [30, 39],
-				iconImageOffset: [-15, -39],
-				balloonOffset: [ 0, -39 ]
-			});
-			myPlacemark2 = new ymaps.Placemark([59.561654, 150.822844], {
-				balloonContent: '<p class="text-map">ул. Набережная реки Магадан,5</p>'
-			}, {
-				iconLayout: 'default#image',
-				iconImageHref: 'img/pin.png',
-				hideIconOnBalloonOpen: false,
-				iconImageSize: [30, 39],
-				iconImageOffset: [-15, -39],
-				balloonOffset: [ 0, -39 ]
-			});
-			myPlacemark3 = new ymaps.Placemark([59.562714, 150.813856], {
-				balloonContent: '<p class="text-map">ул. Горького,23</p>'
-			}, {
-				iconLayout: 'default#image',
-				iconImageHref: 'img/pin.png',
-				hideIconOnBalloonOpen: false,
-				iconImageSize: [30, 39],
-				iconImageOffset: [-15, -39],
-				balloonOffset: [ 0, -39 ]
-			});
-			myPlacemark4 = new ymaps.Placemark([59.552654, 150.795958], {
-				balloonContent: '<p class="text-map">ул. Ясная, 8</p>'
-			}, {
-				iconLayout: 'default#image',
-				iconImageHref: 'img/pin.png',
-				hideIconOnBalloonOpen: false,
-				iconImageSize: [30, 39],
-				iconImageOffset: [-15, -39],
-				balloonOffset: [ 0, -39 ]
-			});
-			myMap.controls.remove('searchControl');
-			myMap.behaviors.disable('scrollZoom');
-			myMap.geoObjects.add(myPlacemark1);
-			myMap.geoObjects.add(myPlacemark2);
-			myMap.geoObjects.add(myPlacemark3);
-			myMap.geoObjects.add(myPlacemark4);
-		}
-	});
 </script> 
+
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
